@@ -8,14 +8,13 @@ resource "aws_security_group" "main" {
     to_port          = 0
     protocol         = "-1"
     cidr_blocks      = ["0.0.0.0/0"]
-   
   }
 
-  tags = merge (
+  tags = merge(
     var.common_tags,
     var.sg_tags,
     {
-    Name = local.sg_final_name
-  }
+        Name = local.sg_final_name
+    }
   )
 }

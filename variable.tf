@@ -1,20 +1,23 @@
-variable "project_name"{
-
-}
-variable "environment"{
-
-}
-variable "sg_name"{
+variable "project_name" {
 
 }
 
-variable "common_tags"{
-    default = {}
+variable "environment" {
 
 }
-variable "sg_tags"{
+
+variable "sg_name" {
+
+}
+
+variable "common_tags" {
     default = {}
 }
-variable "vpc_id"{
+
+variable "sg_tags" {
+    default = {}
+}
+
+variable "vpc_id" {
     
 }
